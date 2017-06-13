@@ -1,0 +1,352 @@
+* { 
+  box-sizing: border-box;
+}
+
+/* Section Styles Throughout */
+
+body {
+  background-color: #f8f8f8;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 1.5em;
+  padding-bottom: 3em;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-layout {
+  width: 100%;
+  margin: 3em auto 0;
+  overflow: hidden;
+  display: inline-block;
+} 
+
+img {
+  width: 100%;
+  margin: 0 auto 1.2em;
+  display: block;
+}
+
+.section-title {
+  margin: 1.5em auto 1em;
+}
+
+
+/* Text Styles Throughout */
+
+h1 {
+  display: block;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  color: #333;
+  font-size: 3em;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.page-title {
+  font-family: 'Merriweather', serif;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+  margin: 1.5em auto 0;
+  text-align: center;
+  color: #333;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+}
+
+p {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 0 auto;
+  letter-spacing: 0.01em;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Nav */
+
+nav {
+  border-bottom: #ddd 1px solid;
+}
+
+.main-nav {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+.main-nav a {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #333;
+  padding: 5px 0;
+}
+
+.main-nav a:hover {
+  color: rgb(60, 185, 175);
+}
+
+
+/* About */
+
+#about-img {
+  width: 75%
+}
+
+
+/* Portfolio */
+
+#portfolio {
+  background: #fff;
+}
+
+#portfolio-pieces {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+/* Contact */
+
+footer {
+  background-color: rgb(60, 185, 175);
+}
+
+.contact-info {
+  border-bottom: #333 1px solid;
+  padding-bottom: 3em;
+}
+
+.info-desc {
+  margin-bottom: 1.5em;
+  color: #333;
+}
+
+.info {
+  margin: 0 auto 0.5em;
+  text-align: center;
+  color: #333
+}
+
+.info p {
+  display: inline-block;
+  margin: 0 0.3em;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.details {
+  font-weight: 500;
+}
+
+#bottom-info {
+  margin: 2em auto;
+  overflow: hidden;
+}
+
+#name,
+#back-to-top,
+.footer-text {
+  text-align: left;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 300;
+  color: #333;
+}
+
+.footer-text {
+  margin-left: 10px
+}
+
+#back-to-top a:hover,
+.footer-text a:hover {
+  color: #ddd;
+}
+
+#back-to-top a:visited {
+  color: #333;
+}
+
+#name {
+  float: left;
+}
+
+#back-to-top {
+  float: right;
+}
+
+#footer-link {
+  display: none;
+}
+
+
+/* Responsive Styles */
+
+@media (min-width: 768px) {
+  .wrapper {
+    overflow: hidden;
+  }
+  
+/* Nav */
+
+  .main-nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 30px;
+  }
+  
+/* About */
+  
+  .about p {
+    display: inline-block;
+    float: left;
+    width: 60%;
+    text-align: left;
+    font-size: 1.2em;
+  }
+  
+  #about-img {
+    display: inline-block;
+    float: right;
+    width: 35%;
+  }
+  
+/* Portfolio */
+  
+  .marketing,
+  .golden,
+  .travel,
+  .doodle,
+  .photo {
+    width: 48.5%;
+    float: left;
+    margin-right: 1.5%
+  }
+  
+  .search,
+  .siberian,
+  .map,
+  .calculator {
+    width: 48.5%;
+    float: right;
+    margin-left: 1.5%
+  }
+  
+  .clearfix {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+/* Contact */
+  
+  .info-desc {
+    width: 60%;
+  }
+  
+/* Footer */
+  
+  #back-to-top {
+    display: none;
+  }
+  
+  #footer-link {
+    display: inline-block;
+    float: right;
+  }
+  
+}
+
+
+@media (min-width: 1024px) {
+/* Nav */
+
+  nav {
+    overflow: hidden;
+  }
+  
+  .name {
+    float: left;
+  }
+  
+  .main-nav {
+    float: right;
+  }
+  
+  .main-nav li {
+    float: left;
+    padding-right: 0;
+    padding-left: 50px;
+  }
+  
+  
+/* Portfolio */
+  .marketing,
+  .golden,
+  .map {
+    width: 30%;
+    float: left;
+    margin-right: 2%;
+  }
+  
+  .map {
+    clear: both;
+    margin-left: 0;
+  }
+  
+  .search,
+  .siberian,
+  .photo {
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  
+  .photo {
+    clear: none;
+  }
+  
+  .travel,
+  .doodle,
+  .calculator {
+    width: 30%;
+    clear: none;
+    float: right;
+    margin-right: 0;
+    margin-left: 2%;
+  }
+}
